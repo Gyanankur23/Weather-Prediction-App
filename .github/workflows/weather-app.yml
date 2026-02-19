@@ -19,10 +19,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          # Replace 'requests' with any other libraries you use
-          pip install requests 
-
+         python -m pip install --upgrade pip
+        #Replace 'requests' with any other libraries you use
+  
       - name: Run Weather App
         env:
           OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
